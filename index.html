@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <form id="calculate">
+    <label for="kg">Enter the total amount in KG</label>
+    <input id="kg" />
+    <p></p>
+    <label for="province">Select the province:</label>
+    <select id="province">
+        <option value="ON" selected="selected">Ontario</option>
+        <option value="AB" >Alberta</option>
+        <option value="MB" >Manitoba</option>
+        <option value="QC" >Quebec</option>
+        <option value="SK" >Saskatchewan</option>
+        <option value="NS" >NovaScotia</option>
+        <option value="PE" >PrinceEdward</option>
+    </select>
+    
+<p></p>
+    <button type="submit">Calculate</button>
+ 
+  <p id="errorMessage" style="color:red"></p>
+  <p id="goodMessage">Shipping Cost on <span id="amount">0</span> is <span id="shippingcost">0</span></p>
+  <script type="module" src="js/main.js"></script>
+</form>
+</body>
